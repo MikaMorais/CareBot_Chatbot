@@ -3,12 +3,11 @@ import customtkinter
 from tkinter import *
 from tkinter import font
 
-
 from chat import get_response, bot_name
 
 BG_GRAY = "#ABB2B9"
 BG_COLOR = "#17202A"
-BG_BTN = "#491F58"
+BG_BTN = "#663A82"
 TEXT_COLOR = "#EAECEE"
 
 
@@ -31,11 +30,12 @@ class ChatApp:
         self.window.configure(width=545, height=590, bg=BG_COLOR)
 
         #Head Label
-        head_label = Label(self.window, bg=BG_COLOR, fg=TEXT_COLOR,
+        head_label = Label(self.window, bg=BG_COLOR, fg=TEXT_COLOR, 
                             text="Bem vindo!", font=FONT_BOLD, pady=10)
-        head_label.place(relwidth=1, rely=0.02)
+        head_label.place(relwidth=1)
 
-        #tiny divider
+        
+        #tiny divider - Is it necessary the divider?
         #line = Label(self.window, width=450, bg=BG_GRAY)
         #line.place(relwidth=1, rely=0.07, relheight=0.012)
         
@@ -47,7 +47,7 @@ class ChatApp:
         self.text_widget.configure(cursor="arrow", state=DISABLED)
         
 
-        #scroll bar
+        #scroll bar - Is it really necessary a scroll bar?
         #scrollbar = Scrollbar(self.text_widget, width=-1) #here changes it the width of the actual scrollbar
         ###scrollbar.place(relheight=1, relx=0.974, rely=0.008) alternative scrollbar, but the cursor keeps going back itself
         #scrollbar.pack(side=RIGHT, fill=Y)
@@ -60,18 +60,18 @@ class ChatApp:
         bottom_label.place(relwidth=1, rely=0.900)
 
         #message entry box
-        self.msg_entry = Entry(bottom_label, bg="#2C3E50", fg=TEXT_COLOR, font=FONT)
+        self.msg_entry = customtkinter.CTkEntry(master=bottom_label, width=400, height=38, corner_radius=10, fg_color="#2C3E50", fg=TEXT_COLOR, font=FONT) #new custom Entry Box
         self.msg_entry.place(relwidth=0.74, relheight=0.05, rely=0.008, relx=0.011)
         self.msg_entry.focus()
-        self.msg_entry.bind("<Return>", self._on_enter_pressed)
+        self.msg_entry.bind("<Return>", self._on_enter_pressed) #Apparently "<Return>" key does not work with the custom entry box
 
         
         #send button
-        #send_button = Button(bottom_label, text="Enviar", font=FONT_BOLD, width=20, bg=BG_GRAY, command=lambda: self._on_enter_pressed(None))
+        #send_button = Button(bottom_label, text="Enviar", font=FONT_BOLD, width=20, bg=BG_GRAY, command=lambda: self._on_enter_pressed(None)) --Tradicional button style
 
-        send_button = customtkinter.CTkButton(master=bottom_label, text="Enviar", fg_color=BG_BTN, corner_radius=10,
+        send_button = customtkinter.CTkButton(master=bottom_label, text="Enviar", fg_color=BG_BTN, height= 38, corner_radius=10,
                                                 command=lambda: self._on_enter_pressed(None))
-        send_button.place(relwidth=0.22, relheight=0.043, rely=0.010, relx=0.77)
+        send_button.place(relwidth=0.22, relheight=0.05, rely=0.008, relx=0.77)
 
     
 
