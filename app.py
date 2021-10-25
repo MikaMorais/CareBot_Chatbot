@@ -7,7 +7,7 @@ from chat import get_response, bot_name
 
 BG_GRAY = "#ABB2B9"
 BG_COLOR = "#17202A"
-BG_BTN = "#663A82"
+BG_BTN = "#00B0BA"
 TEXT_COLOR = "#EAECEE"
 
 
@@ -30,19 +30,13 @@ class ChatApp:
         self.window.configure(width=545, height=590, bg=BG_COLOR)
 
         #Head Label
-        head_label = Label(self.window, bg=BG_COLOR, fg=TEXT_COLOR, 
-                            text="Bem vindo!", font=FONT_BOLD, pady=10)
-        head_label.place(relwidth=1)
-
-        
-        #tiny divider - Is it necessary the divider?
-        #line = Label(self.window, width=450, bg=BG_GRAY)
-        #line.place(relwidth=1, rely=0.07, relheight=0.012)
+        #head_label = Label(self.window, bg=BG_GRAY, fg=TEXT_COLOR, text="\nBem vindo(a) ao CareBot!\n", font=FONT_BOLD, pady=10)
+        head_label = customtkinter.CTkLabel(master=self.window, text="\nBem vindo(a) ao CareBot!\n", text_font="BOLD",  width=540, height=72, corner_radius=8, fg_color="#00B0BA") #new custom Label
+        head_label.place(relwidth=0.99, relheight=0.12, rely=0.004, relx=0.004)
         
 
         #text widget. For every text we display 20 character for each line and padding around so dont start to the very beggining
-        self.text_widget = Text(self.window, wrap=WORD, width=22, height=2, bg=BG_COLOR, fg=TEXT_COLOR,
-                                font=FONT, padx=5, pady=5)
+        self.text_widget = Text(self.window, wrap=WORD, width=22, height=2, bg=BG_COLOR, fg=TEXT_COLOR, font=FONT, padx=5, pady=5)
         self.text_widget.place(relheight=0.770, relwidth=1, rely=0.13) 
         self.text_widget.configure(cursor="arrow", state=DISABLED)
         
@@ -84,15 +78,23 @@ class ChatApp:
         if not msg:
             return
 
+        #Color for the messages and or the user/bot names
+        self.text_widget.tag_config('user_color', foreground="#6451e0")
+        self.text_widget.tag_config('bot_color', foreground="#1f7334")
+        self.text_widget.tag_config('bot_message', foreground="#66ff8c")
+
         self.msg_entry.delete(0, END)
-        msg1 = f"{sender}: {msg}\n\n"
+        msg1 = f": {msg}\n\n"
         self.text_widget.configure(state=NORMAL)
+        self.text_widget.insert(INSERT, sender, 'user_color')
         self.text_widget.insert(END, msg1)
         self.text_widget.configure(state=DISABLED)
+        
 
-        msg2 = f"{bot_name}: {get_response(msg)}\n\n"
+        msg2 = f": {get_response(msg)}\n\n"
         self.text_widget.configure(state=NORMAL)
-        self.text_widget.insert(END, msg2)
+        self.text_widget.insert(INSERT, bot_name, 'bot_color')
+        self.text_widget.insert(END, msg2, 'bot_message')
         self.text_widget.configure(state=DISABLED)
 
 
