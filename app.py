@@ -94,7 +94,7 @@ class ChatApp:
         msg2 = f": {get_response(msg)}\n\n"
         self.text_widget.configure(state=NORMAL)
         self.text_widget.insert(INSERT, bot_name, 'bot_color')
-        self.text_widget.insert(END, msg2, 'bot_message')
+        self.text_widget.insert(END, msg2)
         self.text_widget.configure(state=DISABLED)
 
 
