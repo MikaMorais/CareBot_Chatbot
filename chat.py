@@ -45,7 +45,7 @@ def get_response(msg):
             if tag == intent["tag"]:
                return random.choice(intent['responses'])
     
-    return "I do not undestand..."
+    return "Nao entendi... Poderia tentar digitar de uma outra forma"
 
 print("Let's chat! (type 'quit' to exit)")
 
