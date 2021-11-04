@@ -22,9 +22,9 @@
           "tag": "agradecimentos",
           "patterns": ["Obrigado", "Obrigado voce",  "Isso ajudou bastante", "Muito obrigado!"],
           "responses": [
-              "Feliz em ajudar!", 
-              "Nao ha de que!", 
-              "Por nada! Sempre a disposicao"
+              "Feliz em ajudar! Lembre se que voce e importante e todos seus sentimentos sao validos.", 
+              "Nao ha de que! Lembre se que voce e importante e todos seus sentimentos sao validos.", 
+              "Por nada! Sempre a disposicao. Lembre se que voce e importante e todos seus sentimentos sao validos!"
             ]
       },
       {
@@ -40,7 +40,7 @@
               "Conte me sobre voce!"
           ],
           "responses": [
-              "Excelente pergunta! Meu nome e CareBot, seu amigo e apoio a saude mental! Fui treiando a ajudar voce por quaisquer problemas e coisas que voce esta passando no momento. Estou a total disposicao a voce e quero  te ajudar nesses momentos de altos e baixos. Tecnicamente, eu sou um robo que foi treinado por um humano, mas eu gosto de pensar que sou humano!",
+              "Excelente pergunta! Meu nome e CareBot, seu amigo e apoio a saude mental! Fui treinado a ajudar voce por quaisquer problemas e coisas que voce esta passando no momento. Estou a total disposicao a voce e quero te ajudar nesses momentos de altos e baixos. Tecnicamente, eu sou um robo que foi treinado por um humano, mas eu gosto de pensar que sou humano!",
               "Oi! Otima pergunta! Meu nome e CareBot, seu amigo e apoio a saude mental! Meus caros amigos humanos me treinaram para ser um excelente ouvinte e ser um grande amigo de apoio emocional quando as coisas estao indo bem, e tambem quando nao estao tao bem assim."
           ]
       },
@@ -55,7 +55,7 @@
               "Como trato minha ansiedade?"
           ],
           "responses": [
-              "Vejo que voce quer aprender mais sobre ansiedade e como ajudar e ou apoiar a si mesmo ou pessoas proximas a si.No nivel mais alto, a ansiedade e a resposta natural do corpo ao estresse. e um sentimento de medo ou apreensao sobre o que esta por vir como o primeiro dia de aula, ir a uma entrevista de emprego ou fazer um discurso pode causar medo e nervosismo na maioria das pessoas. Todos nos ficamos ansiosos as vezes, mas a ansiedade se torna um problema quando comeca a afetar drasticamente sua vida diaria. A melhor coisa que voce pode fazer para ajudar a reduzir a ansiedade e respirar fundo algumas vezes e conversar com alguem sobre o que esta sentindo. Alguns remedios naturais que voce pode experimentar incluem: dormir o suficiente meditando, permanecer ativo e se exercitar, manter uma dieta saudavel, evitar o alcool, evitar a cafeina demais e parar de fumar. Apoie seus amigos e entes queridos verificando-os e apenas ouvindo e estando la para eles. Tudo o que voce esta sentindo e valido!"
+              "Vejo que voce quer aprender mais sobre ansiedade e como ajudar e ou apoiar a si mesmo ou pessoas proximas a si.No nivel mais alto, a ansiedade e a resposta natural do corpo ao estresse. e um sentimento de medo ou apreensao sobre o que esta por vir como o primeiro dia de aula, ir a uma entrevista de emprego ou fazer um discurso pode causar medo e nervosismo na maioria das pessoas. Todos nos ficamos ansiosos as vezes, mas a ansiedade se torna um problema quando comeca a afetar drasticamente sua vida diaria. A melhor coisa que voce pode fazer para ajudar a reduzir a ansiedade e respirar fundo algumas vezes e conversar com alguem sobre o que esta sentindo. Alguns remedios naturais que voce pode experimentar incluem: dormir o suficiente meditando, permanecer ativo e se exercitar, manter uma dieta saudavel, evitar o alcool, evitar a cafeina demais e parar de fumar. Apoie seus amigos e entes queridos verificando-os e apenas ouvindo e estando la para eles. Lembre se que voce e importante e tudo o que voce esta sentindo e valido!"
           ]
       },
       {
@@ -69,8 +69,85 @@
             "Como trato minha depressao?"
           ],
           "responses": [
-            "Vejo que voce quer aprender mais sobre a depressao e como sustentar a si mesmo ou pessoas proximas a si. No nivel mais alto, a depressao e um transtorno de humor que causa um sentimento persistente de tristeza e perda de interesse. Tambem chamado de transtorno depressivo maior ou depressao clinica, afeta como voce se sente, pensa e se comporta e pode levar a uma variedade de problemas emocionais e fisicos. voce pode ter problemas para realizar as atividades normais do dia-a-dia e, às vezes, pode sentir que a vida nao vale a pena ser vivida. Todos nos experimentamos tristeza e periodos em que as coisas nao sao tao boas. No entanto, a diferenca entre tristeza e depressao esta na duracao e na magnitude do problema. O melhor curso de tratamento recomendado e conversar com um terapeuta, psiquiatra e ou psicologos que pode ajuda-lo a encontrar o melhor caminho para voce. Todos sao diferentes e o que pode funcionar para uma pessoa pode nao funcionar para outra. Alguns remedios naturais que voce pode tentar incluem: dormir o suficiente, meditar, manter-se ativo e praticar exercicios, tendo uma dieta saudavel, mantendo-se ativo e malhando, evitando o alcool, evitando a cafeina e parando de fumar. Apoie seus amigos e pessoas proximas a si verificando-os e apenas ouvindo e estando la para eles. Tudo o que voce esta sentindo e valido!"
+            "Vejo que voce quer aprender mais sobre a depressao e como sustentar a si mesmo ou pessoas proximas a si. No nivel mais alto, a depressao e um transtorno de humor que causa um sentimento persistente de tristeza e perda de interesse. Tambem chamado de transtorno depressivo maior ou depressao clinica, afeta como voce se sente, pensa e se comporta e pode levar a uma variedade de problemas emocionais e fisicos. voce pode ter problemas para realizar as atividades normais do dia-a-dia e, as vezes, pode sentir que a vida nao vale a pena ser vivida. Todos nos experimentamos tristeza e periodos em que as coisas nao sao tao boas. No entanto, a diferenca entre tristeza e depressao esta na duracao e na magnitude do problema. O melhor curso de tratamento recomendado e conversar com um terapeuta, psiquiatra e ou psicologos que pode ajuda-lo a encontrar o melhor caminho para voce. Todos sao diferentes e o que pode funcionar para uma pessoa pode nao funcionar para outra. Alguns remedios naturais que voce pode tentar incluem: dormir o suficiente, meditar, manter-se ativo e praticar exercicios, tendo uma dieta saudavel, mantendo-se ativo e malhando, evitando o alcool, evitando a cafeina e parando de fumar. Apoie seus amigos e pessoas proximas a si verificando-os e apenas ouvindo e estando la para eles. Lembre se que voce e importante e tudo o que voce esta sentindo e valido!"
           ]
-        }  
+      },
+      {
+            "tag": "TDAH",
+            "patterns": [
+              "Eu acho que tenho TDAH",
+              "O que e TDAH?",
+              "Me fale sobre TDAH",
+              "Poderia ter algumas informacoes sobre TDAH?",
+              "Como posso ajudar alguem proximo que tenha TDAH?",
+              "Como trato meu TDAH?"
+            ],
+            "responses": [
+              "Vejo que voce quer aprender mais sobre o TDAH e como sustentar a si mesmo ou pessoas proximas a si. O TDAH e um transtorno de saede mental caracterizado por tres fatores principais: incapacidade de prestar atencao, hiperatividade e comportamento impulsivo. Para ser diagnosticado com TDAH, esses sintomas devem ser significativos, duradouros e afetar sua capacidade de gerenciar seu trabalho (escola ou emprego) e comportamento. O TDAH e administrado com uma combinacao de medicamentos, terapia comportamental e modificacoes no estilo de vida. Os tratamentos para o TDAH geralmente sao bem-sucedidos. E importante entender que os sintomas de TDAH diferem com base na idade, circunstâancias, temperamento e tambem quaisquer outros desafios de saude mental que uma pessoa com TDAH tambem possa ter. TDAH nem sempre tem sinais externos obvios. Lembre se que voce e importante e tudo o que voce esta sentindo e valido!"
+            ]
+      },
+      {
+            "tag": "consultas",
+            "patterns": [
+                "Como marco uma consulta?",
+                "Agendar consulta?",
+                "Onde agendo consulta?",
+                "Com quem agendo consulta?"
+            ],
+            "responses": [
+              "No momento nao estamos agendando consultas. Assim que for possivel, volte, me pergunte novamente que avisarei!"
+            ]
+      },
+      {
+            "tag": "profissional",
+            "patterns": [
+                "Como falo com um profissional?",
+                "Agendar com profissional",
+                "Falar com profissional",
+                "Por onde falo com profissional",
+                "Contato profissional"
+            ],
+            "responses": [
+              "Atualmente nao trabalhamos diretamente com profissionais para atendimento, nem consultas, mas em breve teremos contatos no qual voce pode encontrar a devida ajuda que precisa"
+            ]
+      },
+      {
+            "tag": "medico",
+            "patterns": [
+                "Como falo com um medico?",
+                "Agendar com medico",
+                "Falar com medico",
+                "Por onde falo com medico",
+                "Contato medico"
+            ],
+            "responses": [
+              "Atualmente nao trabalhamos diretamente com profissionais da saude para atendimento, nem consultas, mas em breve teremos contatos no qual voce pode encontrar a devida ajuda que precisa"
+            ]
+      },
+      {
+          "tag": "ajuda",
+          "patterns": [
+              "Ajuda",
+              "Com quem falo",
+              "Duvida sobre",
+              "Por onde falo"
+          ],
+          "responses": [
+              "Ola! Vejo que necessita de ajuda, para facilitar estamos trabalhando com os seguintes assuntos: Depressao, ansiedade e TDAH. Para mais opcoes temos informacoes sobre horarios, medicos, profissionais e consultas. Basta digitar o que gostaria de saber, como: Quando voce esta online?"
+            ]
+      },
+      {
+        "tag": "horario",
+        "patterns": [
+            "A que horas funciona?",
+            "Qual e o seu horario?",
+            "Quando voce esta online?"
+        ],
+        "responses": [
+          "Estou sempre online para conversamos!", 
+          "O horario que voce se sentir mais confortavel. Sempre a disposicao!",
+          "Todos os dias, a qualquer momento e a qualquer lugar. Vamos conversar!"
+        ]
+      }
     ]
 }
